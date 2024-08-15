@@ -19,7 +19,7 @@ io.on("connection", (socket) => {
 
     socket.on("send-message", (message) => {
         console.log(message);
-        //broadcast recicived message to all user
+        //broadcast recicived message to all
       io.emit("recived-message",message);
     });
 
